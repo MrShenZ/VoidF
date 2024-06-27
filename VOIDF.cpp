@@ -116,7 +116,7 @@ void sumDiag(int **matrix, int row, int col)
 
     sum = 0;
     cout << "Sum of Second Diagonal: ";
-    for (int j = 0; j < row && j < col; j++) {
+    for ( j = 0; j < row && j < col; j++) {
         sum += matrix[j][col - 1 - j];
     }
     cout << sum << endl;
@@ -133,7 +133,7 @@ void aveDiag(int **matrix, int row, int col)
 
     avg = 0;
     cout << "Average of Second Diagonal: ";
-    for (int k = 0; k < row && k < col; k++) {
+    for (k = 0; k < row && k < col; k++) {
         avg += matrix[k][col - 1 - k];
     }
     cout << (double)avg / col << endl;
